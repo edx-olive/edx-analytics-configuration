@@ -13,7 +13,6 @@
     - core_instance_type: m1.medium
     - task_instance_num: 1
     - task_instance_type: m1.medium
-    - task_instance_bid: 0.03
     - instance_fleets: {}
     - instance_groups:
         master:
@@ -28,7 +27,6 @@
           num_instances: "{{ task_instance_num }}"
           type: "{{ task_instance_type }}"
           market: SPOT
-          bidprice: "{{ task_instance_bid }}"
     - bootstrap_actions: {}
     - steps: []
     - applications: []
